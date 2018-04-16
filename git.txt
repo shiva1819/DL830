@@ -1,0 +1,10 @@
+add the files.
+git status - red
+git add . - adding all the files.
+git status - green.
+git commit -m 'message for your commit'
+git push - to add your files to remote repo.
+
+
+git clone 'link'
+git pull.
