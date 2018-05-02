@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Exo+2:400,500,600|Source+Sans+Pro:700,900" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+	<style type="text/css">
+	/*
+		font-family: 'Exo 2', sans-serif; - regular Text
+		font-family: 'Source Sans Pro', sans-serif; - headings
+	*/
+		*{
+			margin: 0px;
+			padding: 0px;
+			font-family: 'Exo 2', sans-serif;
+		}
+		#header{
+			background: #3074ab;
+		}
+		h1,h2,h3,h4,h5,h6{
+			font-family: 'Source Sans Pro', sans-serif;
+		}
+		#header .logo{
+			float: left;
+			width:20%;
+			color: #fff;
+			/*background: #ffeeee;*/
+			line-height: 40px;
+			font-size:30px;
+			font-weight:bolder;/*100-900*/
+			font-style:italic;
+			font-variant:small-caps;
+			/*font-family: 'Source Sans Pro', sans-serif;*/
+			text-align: center; /* left | right | center | justify */
+		}
+		#header #menu{
+			width:80%;
+			float: left;
+		}
+		#header #menu ul{
+			float: right;
+			list-style-type: none; /* cricle | round | sqaure | none*/	
+		}
+
+		#header #menu ul li{
+			width:100px;
+			border-right: 1px solid #fff;
+			line-height: 40px;
+			display: inline-block;
+			background-color: rgba(48,100,142,0.7);
+			text-align: center;
+		}
+		#header > #menu > ul >  li > a{
+			color:#fff;
+			text-decoration: none; /* underline, overline, linethrough, none*/
+		}
+		p{
+			width:400px;
+			/*height: 200px;*/
+			background-color: lime;
+			margin: auto;
+			text-align: justify;
+			text-transform:lowercase;
+			text-indent:100px;
+			/*overflow: auto;*/
+			line-height: 30px;
+			word-spacing:20px;
+			letter-spacing: 20px;
+		}
+		.btn{
+			width:100px;
+			padding: 20px;
+			border:1px solid #000;
+			text-align: center;
+		}
+		.clearfix{
+			clear: both;
+		}
+
+		/*
+		#logo ~ #menu {
+			background-color: red;
+		}*/
+		/* combinators , desendent selecter'space', >  child selector, + sibling selector, ~ sibling all selector */
+	</style>
+</head>
+<body>
+	<div id="header">
+		<div class="logo">
+			<h2> logo </h2>
+		</div>	
+		<div id="menu">
+			<ul>
+				<li>
+					<a href="#"> <i class="fas fa-home"></i> HOME </a>
+				</li>
+				<li>
+					<a href="#"> <i class="fas fa-user"></i> ABOUT </a>
+				</li>
+				<li>
+					<a href="#"> GALLERY </a>
+				</li>
+				<li>
+					<a href="#"> SERVICES </a>
+				</li>
+				<li>
+					<a href="#"> CONTACT </a>
+				</li>
+			</ul>
+			<div class="clearfix"></div>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+	<h2 class="logo"> HEADING </h2>
+	<p>
+		Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+		<div class="btn"> Readmore </div>
+	</p>
+
+</body>
+</html>

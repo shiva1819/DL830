@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		body{
+			margin: 0px;
+		}
+		#navbar{
+			width:300px;
+			position: fixed;
+			/*display: inline-block;*/
+			height: 100vh;
+			background-color: #ccc;
+			padding: 10px;
+			box-sizing: border-box;
+
+			vertical-align: top; /*middle | top | bottom */
+		}
+		#content{
+			/*display: inline-block;*/
+			padding: 20px;
+			margin-left: 300px;
+			box-sizing: border-box;
+			vertical-align: top;
+		}
+		#main{
+			width:500px;
+			border:1px solid;
+			height: 300px;
+			background-color: lime;
+			position: relative;
+		}
+		#posabs{
+			width:50%;
+			height: 300px;
+			position: absolute;
+			right: 0px;
+			top: 0px;
+			background-color: crimson;
+		}
+	</style>
+</head>
+<body>
+	<!-- floats, inline-block, positions -->
+	<div id="navbar">
+		<div id="logo">
+			<h2> LOGO </h2>
+		</div>
+		<div id="menu">
+			<ul>
+				<li>
+					HOME
+				</li>
+				<li>
+					ABOUT
+				</li>
+				<li>
+					GALLERY
+				</li>
+				<li>
+					CONTACT
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="content" style="height: 1000px;">
+		<div id="main">
+			<div id="posabs">
+				
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
