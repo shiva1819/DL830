@@ -2,8 +2,76 @@
 <html>
 <head>
 	<title></title>
+	<style type="text/css">
+		
+		#an:link{
+			color: red;
+		}
+		#an:hover{
+			color: green;
+		}
+		#an:visited{
+			color: yellow;
+		}
+		#an:active{
+			color: pink;
+		}
+
+
+		.btn{
+			width:100px;
+			height: 40px;
+			text-align: center;
+			line-height: 40px;
+			background-color: lime;
+			color: #fff;
+			font-weight: bolder;
+		}
+		.btn:hover{
+			background-color: #4CAF50;
+			color: #fff;
+		}
+
+		.list li:last-child{
+			background-color: lime;
+		}
+
+		/* n=1, 3, 5, 7*/
+		.list li:nth-child(2n+2){
+			background-color: red;
+		}
+		.list li:nth-child(2n+1){
+			background-color: lime;
+		}
+	</style>
 </head>
 <body>
+	<a href="#" id="an"> Home </a>	
 
+	<div class="btn">
+		SIGN IN
+	</div>
+
+
+	<ul class="list">
+		<li>
+			Home 
+		</li>
+		<li>
+			ABout 
+		</li>
+		<li>
+			Home 
+		</li>
+		<li>
+			Home 
+		</li>
+		<li>
+			Home 
+		</li>
+		<li>
+			Contact 
+		</li>
+	</ul>
 </body>
 </html>
