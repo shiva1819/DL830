@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#username{
+			width:300px;
+			height: 30px;
+			font-size: 18px;
+			color: red;
+			border:1px solid red;
+		}
+		#male{
+			width:50px;
+			height: 50px;
+		}
+		#signup{
+			width:150px;
+			padding: 20px;
+			background: rgba(124,230,111,0.6);
+			border:none;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<!-- text, password, radio, checkbox, select, textarea,  -->
+		<div>
+			<!-- <span>Name : </span> -->
+			<label for="username">Name</label><input type="text" name="username" id="username" >
+		</div>
+		<div>
+			<label for="password"> Password : </label>
+			<input type="password" name="password" id="password">
+		</div>
+		<div>
+			<input type="radio" name="gender" id="male">
+			<label for="male"> Male : </label>
+			
+			<input type="radio" name="gender" id="male">
+			<label for="male"> Female : </label>
+		</div>
+		<div>
+			<input type="checkbox" name="eng" id="eng">
+			<label for="eng"> English </label>
+
+			<input type="checkbox" name="tel" id="tel">
+			<label for="tel"> Telugu </label>
+
+			<input type="checkbox" name="hindi" id="hindi">
+
+			<label for="hindi"> Hindi </label>
+			<input type="checkbox" name="tamil" id="tamil">
+
+			<label for="kannda"> kannda </label>
+			<input type="checkbox" name="kannda" id="kannda">
+		</div>
+		<div>
+			<select>
+				<option> -- Please choose one -- </option>
+				<option value="1"> 1 </option>
+				<option> 2 </option>
+				<option> 3 </option>
+				<option> 4 </option>
+				<option> 5 </option>
+
+			</select>
+		</div>
+		<div>
+			<textarea>
+				
+			</textarea>
+		</div>
+		<div>
+			<input type="button" name="signup" id="signup" value="submit">
+			<button type="button"> Sigin In </button>
+		</div>
+		
+	</form>
+</body>
+</html>
