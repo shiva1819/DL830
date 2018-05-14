@@ -6,7 +6,8 @@
 <body>
 	<script type="text/javascript">
 		var link = "https://www.lipsum.com/";
-		var para = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.";
+
+		var para = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. dummy Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.";
 
 		// string.repalce('searchValue', 'replacedValue');
 		console.log(link.replace('com', 'in'));
@@ -15,6 +16,22 @@
 		if(link !== link.replace('com', 'in')){
 			alert("your are redirecting to .in");
 		}
+		console.log(para.length);
+
+		// replace(selector, value),
+		// indexOf(selector), lastIndexOf(), search(),
+		// substring(start, end), substr(start, length), slice(start, end). 
+
+		console.log(para.search('dummy'));
+		console.log(para.indexOf('dummy', 26));
+		console.log(para.lastIndexOf('dummy'));
+
+		if(para.lastIndexOf('dummy') > -1){
+
+			console.log(para.substr(para.lastIndexOf('dummy'),6));
+		}
+
+
 
 
 	</script>
