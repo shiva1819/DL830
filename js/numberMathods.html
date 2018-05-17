@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		var num = "10.12345";
+
+		// parseInt() - can convert stringed number to numbers.
+		// num = parseInt(num);
+		num = parseFloat(num);
+
+		// console.log(num + 1212); // 101212.		
+
+		// Math.round(); Math.ceil(), Math.floor(), Math.random(); 
+
+		// 10.4 - 10 - 11
+		Math.round(10.4) // 10.5 - 11
+		Math.round(10.500) // 11
+
+		Math.ceil(10.00001) // 9.5
+		Math.floor(10.999999); // 0.999
+
+		// console.log(Math.random() * 100);
+		// console.log(Math.ceil(Math.random() * 10));
+
+		var abc = Math.ceil(Math.random() * 10); 
+		console.log(abc);
+		// debugger
+		if(abc == 10){
+			
+			alert( "This is 10 ");
+
+		}else if(abc == 9){
+			alert( "This is 9 ");
+		}else if(abc == 8){
+			alert( "This is 8 ");
+		}else if(abc == 7){
+			alert( "This is 7 ");
+		}else{
+			alert('sorry..');
+		}
+
+
+
+	</script>
+</body>
+</html>
