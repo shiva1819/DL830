@@ -5,50 +5,60 @@
 </head>
 <body>
 
-
+	<button onclick="demo()"> start </button>
 
 	<script type="text/javascript">
-		var company = [
-						{"first name":" shiva", "empId":1244, "email":"as.prasad@gmail.com","age":30},
-						{"first name":"shiva1", "empId":1245, "email":"as.prasad1@gmail.com","age":40},
-						{"first name":"shiva2", "empId":1246, "email":"as.prasad2@gmail.com","age":50}
-					]
+
+		
+		function demo(){
+			var num1 = Math.ceil(Math.random() * 10);
+			var num2 = Math.ceil(Math.random() * 20);
+
+			alert(num1 + num2);			
+		}
 
 
-	// console.log(company);
+		function test(a,b){
+			alert(a + b);
+		}
+
+		console.log(test(10, 50) + 20);
+		// test(30, 50);
+		// test(30, 30);
 
 
-
-	// loops - for, for in, while.
-
-	/*for(decleration ; condition ; increment){
-
-	}*/
-
-	for(var i = 0; i < company.length; i++) {
-		console.log(i);
-		console.log(company[i]["first name"] +" - " + company[i]["empId"] +" - " + company[i]["email"]);
-	}
-
-	// company[3].age;
+		function check(a,b){
+			return a + b;
+		}
 
 
+		// var a = 10;
 
-	// for In 
-	for(var i = 0 in company){
-		console.log(company[i]["first name"] +" ~ " + company[i]["empId"] +" ~ " + company[i]["email"]);	
-	}
+		console.log(check(20,20) + 40);
 
 
 
-	var i = 0;
+		// function with No Name..
+		var tst = function(){
+			console.log('Shiva');
+		}
 
-	while( i < company.length ){
-		console.log(company[i]["first name"] +" * " + company[i]["empId"] +" * " + company[i]["email"]);
-		i++;
-	}
+		tst();
 
 
+		// Self invoking function.
+
+
+		(function(a){
+
+			alert(a)
+
+		})(10);
+
+
+
+
+		// console.log(demo());
 
 	</script>
 </body>

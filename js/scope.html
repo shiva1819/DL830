@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+
+
+		'use strict'
+
+		// var a = 10; // global scope
+
+		function abc(){
+
+			// var a = 20; // local scope.
+
+			var a = 20; // global scope.
+			console.log(a); // local scope.
+
+			return a;
+		}
+
+		abc();
+
+
+		console.log(abc()); // 10
+	</script>
+</body>	
+</html>
