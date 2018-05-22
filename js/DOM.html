@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>	
+
+	<div id="one" class="one">
+		<p id="para"> para </p>
+	 </div>
+	<div class="one"> class </div>
+	<div class="one"> One class </div>
+	<div class="one"> Two class </div>
+
+	<script type="text/javascript">
+		// DOM - document object model.
+
+	// element -> ID, Class, ElementName
+
+	var One = document.getElementById('one'); // *
+
+	var Para = document.getElementById('para');
+	var Class = document.getElementsByClassName('one')[1];
+	var Ele = document.getElementsByTagName('div');
+
+
+	for (var i = 0; i < Ele.length; i++) {
+		// Ele[i].innerText = "This is " + i;
+	}
+
+
+	// method to set/get innerText.
+
+
+	// createElment, readElement, deleteElement, UpdateElement, StyleElement, addToParent, addToChild, ChangingAttibutes.
+
+	
+	// console.log(One.innerText); //One - getter
+	// One.innerText = "<h1>Two</h1>" // setter
+	// One.innerHTML = "<h1>Two</h1>";
+
+	// Event Registration.
+
+
+	//  element.addEventListener(eventName, function(){}, capturing/bubbling);
+
+
+		One.addEventListener('click', function(){
+			alert(0);
+			// console.log(One.innerText); //One - getter
+			// One.innerText = "<h1>Two</h1>" // setter
+			// Class.innerHTML = "<h1>Two</h1>";
+
+		}, true);
+
+		Para.addEventListener('click', function(){
+			alert(1);
+
+		}, true)
+
+
+
+	</script>
+</body>
+</html>
