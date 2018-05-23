@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<title></title>
+	<style type="text/css">
+		*{
+			margin: 0px;
+			padding: 0px;
+			transition: 1s;
+		}
+		#menu{
+			width:250px;
+			height: 100vh;
+			position: fixed;
+			left: 0px;
+			top: 0px;
+			background: #ccc;
+			color: #fff;
+			padding: 20px;
+			box-sizing: border-box;
+			text-align: center;
+		}
+		#menu h1{
+			padding: 25px;
+			box-sizing:border-box;
+		}
+		#menu ul{
+			margin-top: 100px;
+		}
+		#menu ul li{
+			list-style: none;
+			line-height: 50px;
+		}
+		#btn{
+			position: fixed;
+			right: 50px;
+			top: 20px;
+			padding: 5px 10px;
+			background: skyblue;
+			color: #fff;
+			border:0px;
+			font-size: 20px;
+
+		}
+	</style>
+</head>
+<body>
+	<button id="btn" type="button"> <i class="fas fa-bars"></i> </button>
+	<div id="menu">
+		<h1> LOGO </h1>
+		<ul>
+			<li>
+				HOME
+			</li>
+			<li>
+				ABOUT
+			</li>
+			<li>
+				GALLERY
+			</li>
+			<li>
+				CONTACT
+			</li>
+		</ul>
+	</div>
+	<script type="text/javascript">
+		var menu = document.getElementById('menu');
+		var btn = document.getElementById('btn');
+
+		// menu.style.display = "none";
+		menu.style.left = "0px";
+
+		btn.addEventListener('click', function(){
+
+/*			if(menu.style.display == "none"){
+				menu.style.display = "block";
+			}else{
+				menu.style.display = "none";
+			}
+
+*/
+
+			if(menu.style.left == "0px"){
+				menu.style.left = "-300px";
+			}else{
+				menu.style.left = "0px";
+			}
+		});
+
+
+
+
+	</script>
+</body>
+</html>

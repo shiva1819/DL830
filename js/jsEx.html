@@ -2,13 +2,49 @@
 <html>
 <head>
 	<title></title>
+	<style type="text/css">
+		.imgt{
+			width:100px;
+			height: 100px;
+			/*display: none;*/
+		}
+	</style>
 </head>
 <body>
 
+	<div id="one">
+		image
+		<img src="light.png" class="imgt">
+	</div>
 	
-	
+
 	<script type="text/javascript">
+		var one = document.getElementById('one');
+		var imgt = document.getElementsByClassName('imgt')[0];
+
+
+		// Element.style.cssProperty = cssvalue;
+
+
+		imgt.style.width = "200px";
+		imgt.style.height = "200px";
+
+
+		imgt.style.display = "none";
+
+
+
+		one.addEventListener('click', function(){
+
+			if( imgt.style.display == "none"){
+				imgt.style.display = "inline-block";	
+			}else{
+				imgt.style.display = "none";
+			}	
+		});
+
 		
+
 	</script>
 </body>
 </html>

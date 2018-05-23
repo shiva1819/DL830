@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<p> thiashdoasd </p>
+
+	<script type="text/javascript">
+		// innerText, innerHTML. .style, setAttribute, getAttribute, removeAttribute, appendChild(), ele.attribute
+
+		var body = document.getElementsByTagName('body')[0];
+		// body.innerHTML = "<p> This is content </p>"
+
+
+		// document.createElement('')
+
+		var anc = document.createElement('a');
+
+
+		// adding attibutes to elements - elem.attribute
+
+		// anc.href = "https://fontawesome.com/icons/bars?style=solid";
+		// anc.id = "one";
+		// anc.className = "two";
+
+
+		// ele.setAttribute(attributeName, attrValue);
+
+		anc.setAttribute('href', "https://fontawesome.com/icons/bars?style=solid");
+		anc.setAttribute('id', 'one');
+		anc.setAttribute('class', 'two');
+
+		anc.removeAttribute('class');
+
+		console.log(anc.getAttribute('href') + "-----");
+
+
+		// anc.src = "img source...";
+
+		anc.innerText = "Link"
+
+		console.log(anc);
+		//  appendChild(); - (innerHTML) -  ele.appendChild(childElement);
+		body.appendChild(anc);
+
+	</script>
+</body>
+</html>
