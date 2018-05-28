@@ -70,6 +70,7 @@ input[type="text"]{
 }
 .form-control label i{
 	font-size: 20px !important; 
+	color: #5c6f90;
 }
 
 #country{
@@ -94,6 +95,7 @@ input[type="text"]{
 }
 .genderlabel label i{
 	font-size: 24px !important;
+	color: #5c6f90;
 }
 .btnwrap{
 	text-align: center;

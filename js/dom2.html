@@ -6,6 +6,13 @@
 <body>
 	<input type="text" name="name" id="one">
 	<h1 id="disp"> </h1>
+
+	<!-- parent -->
+
+	<div id="test"> 
+		SOME T%EXT;
+	</div>
+
 	<button type="button" id="btn"> get </button>
 
 	<script type="text/javascript">
@@ -19,11 +26,18 @@
 		btn.addEventListener('click', function(){
 			console.log(one.value);
 
-			disp.innerText = one.value;
+
+			
 
 		});
 
+		//  innerText, innerHTML, appendChild()
+		var test = document.getElementById('test');
+		var text = document.createElement('p');
+			text.innerText = "xyz....";
 
+
+			test.appendChild(text);
 
 	</script>
 </body>
