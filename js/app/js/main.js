@@ -33,6 +33,7 @@ var gender = document.getElementsByClassName('gender');
 
 
 var getInfo = document.getElementById('getInfo');
+var updateInfo = document.getElementById('updateInfo');
 var restInfo = document.getElementById('restInfo');
 
 var dataTable = document.getElementById('dataTable');
@@ -103,4 +104,102 @@ getInfo.addEventListener('click', function(){
 
 		dataTable.appendChild(TR);
 
+function resetfn(){
+		uName.value = "";
+		contact.value = "";
+		Email.value = "";
+		Passcode.value = "";
+		country.value = "none";
+
+		gender[0].checked = false;
+		gender[1].checked = false;
+
+}
+
+resetfn();
+
+Delete.addEventListener('click', function(){
+	// debugger;
+	console.log(this);
+	var child = this.parentNode.parentNode;
+	dataTable.removeChild(child);
+});
+
+
+Edit.addEventListener('click', function(){
+
+updateInfo.style.display = "inline";
+getInfo.style.display = "none";
+
+var NameTdGet = this.parentNode.parentNode.children[0];
+var passwordTdGet = this.parentNode.parentNode.children[1];
+var EmailTdGet = this.parentNode.parentNode.children[2];
+var ContactTdGet = this.parentNode.parentNode.children[3];
+var countryTdGet = this.parentNode.parentNode.children[4];
+var genderTdGet = this.parentNode.parentNode.children[5];
+
+// var NameTdGet = this.parentNode.parentNode.children[0];
+
+	uName.value = NameTdGet.innerText;	
+	contact.value = ContactTdGet.innerText;
+		Email.value = EmailTdGet.innerText;
+		Passcode.value = passwordTdGet.innerText;
+		country.value = countryTdGet.innerText;
+
+		if(genderTdGet.innerText == "Male"){
+			gender[0].checked = true;
+		}else{
+			gender[1].checked = true;
+		}
+
+updateInfo.onclick = function(){
+
+	NameTdGet.innerText = uName.value;	
+	ContactTdGet.innerText = contact.value;
+	EmailTdGet.innerText = Email.value;
+	passwordTdGet.innerText = Passcode.value;
+	countryTdGet.innerHTML = country.value;
+
+
+	if(gender[0].checked == true){
+		genderTdGet.innerText = "Male";
+	}else if(gender[1].checked == true){
+		genderTdGet.innerText = "Female";
+	}
+
+	updateInfo.style.display = "none";
+	getInfo.style.display = "inline";	
+
+
+
+	// return NameTd, ContactTdGet, EmailTdGet, passwordTdGet, countryTdGet, genderTdGet;
+
+	uName.value = "";
+		contact.value = "";
+		Email.value = "";
+		Passcode.value = "";
+		country.value = "none";
+
+		gender[0].checked = false;
+		gender[1].checked = false;
+};
+
+
+
+
+});
+
+
+
+});
+
+restInfo.addEventListener('click', function(){
+	uName.value = "";
+		contact.value = "";
+		Email.value = "";
+		Passcode.value = "";
+		country.value = "none";
+
+		gender[0].checked = false;
+		gender[1].checked = false;
 });

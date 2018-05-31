@@ -109,7 +109,7 @@ input[type="text"]{
 	font-size: 20px;
 	color: #fff;
 }
-#getInfo{
+#getInfo, #updateInfo{
 	background-color: #1da270;
 }
 #restInfo{
@@ -131,6 +131,16 @@ input[type="text"]{
 	max-width: 150px;
 	word-wrap: break-word;
 }
+
+td button i{
+	padding: 2px;
+    font-size: 1.2rem;
+    color: #e04c41;
+}	
+td button i.fa-pen-square{
+	color: #0e9e14;
+}
+
 
 .cleafix{
 	clear: both;
