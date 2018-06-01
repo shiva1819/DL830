@@ -189,8 +189,6 @@ updateInfo.onclick = function(){
 
 });
 
-
-
 });
 
 restInfo.addEventListener('click', function(){
@@ -203,3 +201,6 @@ restInfo.addEventListener('click', function(){
 		gender[0].checked = false;
 		gender[1].checked = false;
 });
+
+
+// document.write('Shiva');

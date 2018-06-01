@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+
+		
+		// Hoisting 
+		// Closure
+		// Encapsulation
+		// Constructor function
+		// Prototype Inheritance.
+
+
+
+// ----------------------- Hoisting
+		// demo123();	
+		/*var abc, demo;
+		abc = 10;
+		console.log(abc);
+		
+		var demo = function(){
+			alert(1);
+		}
+		demo(); 
+		function demo123(){
+			alert(23);
+		}*/
+// -----------------------Closure
+	
+/*	function demo(one){
+
+		var abc = 10;
+
+		function demoChild(){
+			alert(abc);
+			var cda = 20;
+		}
+
+		demoChild();
+	}
+
+	demo();
+*/
+
+// ---------------------------Encapsulation.
+
+/*
+function demo(){
+	var abc = 10;
+
+}
+
+
+var demofn = (function(){
+
+	var abc = 10;
+
+
+	return abc;
+
+});
+
+console.log(demofn());
+
+console.log(abc);*/
+
+// ------------------------------ constructors.
+
+	function demo(name, age){
+		this.name = name;
+		this.age = age;
+		
+	}
+
+	var one = new demo("Shiva", 30);
+	var Two = new demo("Shiva1", 31);
+	var Three = new demo("Shiva2", 32);
+
+
+
+	demo.prototype.contact = 909293423;
+
+	demo.prototype.fullName = function(){
+			return "Hey This is "+ this.name +" and I am "+this.age + " Old";
+		}
+
+	// console.log(Three.fullName());
+	console.log(Three);
+
+
+	// var arr = new Array();
+	// var obj = new Object();
+
+	// var Obj = {}
+	// var arr = [];
+
+
+	// console.log(one.age);
+
+	</script>
+</body>
+</html>
