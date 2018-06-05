@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#drop{
+			width: 300px;
+			height: 300px;
+			border:1px solid;
+		}
+		img{
+			width:100px;
+			height: 100px;
+		}
+	</style>
+</head>
+<body id="drop1" ondrop="drop(event)" ondragover="dragOn(event)">
+
+	<section id="drop" ondrop="drop(event)" ondragover="dragOn(event)">	
+	</section>
+
+	<img src="images/coin.png" id="drag" ondragstart="drag(event)" draggable="true">
+	<img src="images/coin.png" id="drag1" ondragstart="drag(event)" draggable="true">
+	<img src="images/coin.png" id="drag2" ondragstart="drag(event)" draggable="true">
+
+
+
+
+	<script type="text/javascript">
+		
+		
+
+		function drag(ev){
+			ev.dataTransfer.setData('coin', ev.target.id);
+		}
+
+
+		function dragOn(ev){
+			ev.preventDefault();
+		}
+
+		function drop(ev){
+			ev.preventDefault();
+			var coinId = ev.dataTransfer.getData('coin');
+			ev.target.appendChild(document.getElementById(coinId));
+		}
+	</script>
+</body>
+</html>

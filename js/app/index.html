@@ -7,8 +7,8 @@
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
 </head>
 <body>
-	<div id="main">
-		<div id="contentL" class="box">
+	<main id="main">
+		<article id="contentL" class="box">
 			<table>
 				<thead>
 					<tr>
@@ -62,9 +62,9 @@
 				</tbody>
 			</table>		
 
-		</div>
+		</article>
 
-		<div id="contentR" class="box">
+		<aside id="contentR" class="box">
 			<!-- HTML Forms  -->
 
 			<!-- <div id="closer"> <i class="fas fa-arrow-right"></i> </div> -->
@@ -76,7 +76,7 @@
 				</div>
 				<div class="form-control">
 					<label for="password"><i class="fas fa-unlock-alt"></i></label>
-					<input type="text" name="password" class="password" id="Passcode" placeholder="Password">
+					<input type="password" name="password" class="password" id="Passcode" placeholder="Password">
 				</div>
 				<div class="form-control">
 					<label for="email"> <i class="fas fa-envelope"></i> </label>
@@ -84,7 +84,7 @@
 				</div>
 				<div class="form-control">
 					<label for="contact"> <i class="fas fa-phone"></i> </label>
-					<input type="text" name="contact" class="contact" id="contact" placeholder="Contact">
+				<input type="text" name="contact" class="contact" id="contact" placeholder="Contact" maxlength="10">
 				</div>
 				<div class="form-control">
 					<label for=""> <i class="fas fa-globe"></i> </label>
@@ -114,9 +114,9 @@
 
 			</div>
 
-		</div>
+		</aside>
 		<div class="cleafix"></div>
-	</div>
+	</main>
 
 	<script type="text/javascript" src="js/main.js"></script>
 </body>

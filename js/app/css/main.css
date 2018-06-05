@@ -34,7 +34,7 @@
 	box-sizing: border-box;
 }
 
-div[id="contentR"]{
+#contentR{
 	width: 30%;
 	background:#e4eaf5;
 	position: fixed;
@@ -52,7 +52,7 @@ div[id="contentR"]{
 /*-------------- inputs -------------------*/
 
 
-input[type="text"]{
+input[type="text"], input[type="password"]{
 	width:80%;
 	line-height: 30px;
 	padding: 5px;

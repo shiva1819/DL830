@@ -41,8 +41,55 @@ var dataTable = document.getElementById('dataTable');
 
 
 getInfo.addEventListener('click', function(){
-	alert('clicked...');
+	// alert('clicked...');
 	console.log(uName.value, Passcode.value,contact.value, Email.value, country.value);
+
+	var NameRegex = /^[a-zA-Z, " "]{3,}$/g;
+	var numRegex = /^[0-9]{10,10}$/g;
+	var EmailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+	var PassRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/;
+
+	if(!NameRegex.test(uName.value)){
+		alert('Please fill Name Field..');
+		return false;
+	}else if( !PassRegex.test(Passcode.value)){
+		alert('password Error');
+		return false;
+	}else if(!EmailRegex.test(Email.value)){
+		alert("Email Error");
+		return false;
+	}else if(!numRegex.test(contact.value)){
+		alert("Contact Error");
+		return false;
+	}else if( country.value == "none"){
+		alert("COuntry Error");
+		return false;
+	}else if(gender[0].checked == false && gender[1].checked == false){
+		alert("Gender Error");
+		return false;
+	}else{
+		alert('Success');
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	// creating TR	
 	var TR = document.createElement('tr');

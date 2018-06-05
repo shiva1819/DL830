@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form>
+		<input type="email" name="" required>
+		0 <input type="range" name="" id="ran" min="0" max="10"> 10 
+		<input type="color" name="">
+		<input type="number" name="">
+		<input type="file" name="">
+		<input type="search" name="">
+		<input type="date" name="">		
+
+		<button> Demo </button>
+	</form>
+
+	<script type="text/javascript">
+		var ran = document.getElementById('ran');
+
+		ran.onchange = function(){
+			console.log(this.value);
+		}
+	</script>
+</body>
+</html>
