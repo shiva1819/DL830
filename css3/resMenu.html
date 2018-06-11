@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style type="text/css">
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		#mainHeader{
+			width:100%;
+			background-color: #ccc;
+			color: #fff;
+		}
+		#mainHeader logo{
+			display: block;
+			width: 20%;
+			text-align: center;
+			line-height: 50px;
+			float: left;
+		}
+
+		#menu{
+			float: left;
+			width: 74.96339677891654%;
+		}
+		#menu ul{
+			float: right;
+			margin-right: 50px;
+		}
+		#menu ul li{
+			display: inline-block;
+			padding: 15px;
+			list-style: none;
+		}
+		#menuBtn{
+			width:50px;
+			line-height: 30px;
+			background-color: none;
+			float: right;
+			margin-top: 10px;
+			margin-right: 20px;
+			display: none;
+		}
+
+		@media screen and (min-width: 764px){
+					#menu{
+						display: none;
+					}
+					#menuBtn{
+						display: block;
+					}
+		}
+
+		.clearfix{
+			clear: both;
+		}
+	</style>
+</head>
+<body>
+
+	<header id="mainHeader">
+		<logo> RESPONSIVE </logo>
+		<button id="menuBtn"> Menu </button>
+		<nav id="menu">
+			<ul>
+				<li>
+					Home 
+				</li>
+				<li>
+					About
+				</li>
+				<li>
+					Gallery
+				</li>
+			</ul>
+		</nav>
+		<div class="clearfix"></div>	
+	</header>
+
+	<script type="text/javascript">
+		var btn = document.getElementById('menuBtn');
+		var menu = document.getElementById('menu');
+			// menu.style.display = "none";
+			btn.onclick = function(){
+
+				if(menu.style.display == "none")
+					menu.style.display = "block";
+				else
+					menu.style.display = "none";
+			}
+
+	</script>
+
+</body>
+</html>

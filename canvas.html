@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+
+	<canvas id="can" width="500" height="500" style="border:1px solid">
+		Your Browser is not supporting... Canvas.
+	</canvas>
+
+	<script type="text/javascript">
+		
+		var can = document.getElementById('can');
+		var ctx = can.getContext('2d');
+
+			console.log(ctx);
+
+/*			ctx.moveTo(0,0);
+			ctx.lineTo(100,100);
+			ctx.moveTo(100,100);
+			ctx.lineTo(50,150);
+			ctx.moveTo(50,150);
+			ctx.lineTo(50,500);
+			// ctx.color = "red";
+			ctx.stroke();
+*/			ctx.fillStyle = "green";
+			ctx.fillRect(0,0,500,50);
+			ctx.clearRect(10,10,480,30);
+
+
+			
+			// ctx.moveTo(0,0);
+			// ctx.lineTo(100,100);
+			ctx.arc(150,350, 50, 0, 2*Math.PI);
+			ctx.arc(100,300, 30, 0, 2*Math.PI);
+			ctx.arc(200,300, 30, 0, 2*Math.PI);
+
+			ctx.fill();
+
+
+			ctx.fillText('Shiva', 50, 50);
+			ctx.stroke();
+
+
+
+	</script>
+</body>
+</html>

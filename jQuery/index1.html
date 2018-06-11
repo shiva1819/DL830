@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		div{
+			width: 200px;
+			/*display: none;*/
+		}
+		#div{
+			width: 200px;
+		}
+		.one{
+			width: 200px;
+			height: 200px;
+			background-color: lime;
+		}
+		article{
+			width: 100px;
+			height: 100px;
+			border-radius: 50%;
+			text-align: center;line-height: 100px;
+			border:1px solid;
+		}
+	</style>
+</head>
+<body>
+	
+	<div class="one">
+		Shiva
+	</div>
+	<div class="one">
+		asdas
+	</div>
+
+	<article> Move </article>
+
+	<button> click </button>
+	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+	<script type="text/javascript">
+		// document.getElementByTagName('div')[].innerText = "alskdaksdaksjd";
+
+
+		// var j = $.noConflict();
+
+		// element.text(), element.html(), .animate();
+		console.log($('.one').html('h1asda'));
+
+		// hide(), show(), fadeIn(), fadeOut(), fadeToggle(), slideUp(), slideDown(), slideToggle(), stop(), animate()
+		$('.one').click(function(){
+			
+			$(this).hide();
+		});
+
+		/*$('button').click(function(){
+			
+			// $('.one').fadeIn(5000);
+			// $('.one').fadeOut(5000);
+			$('.one').fadeToggle(5000);
+
+
+			// $('.one').slideDown(5000);
+			// $('.one').slideUp(5000);
+			// $('.one').slideToggle(2000);
+
+
+		});*/
+
+
+		$('.one').mouseover(function(){
+
+			$(this).stop();
+
+		});	
+
+
+
+		/*element.eventname(function(){
+			// do codes
+		})*/
+
+
+
+		$("button").click(function(){
+
+			$('article').animate({
+				marginLeft:"200px",
+				marginTop:"200px"
+			})
+		});
+
+
+	</script>
+</body>
+</html>
